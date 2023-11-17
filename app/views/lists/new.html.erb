@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Nouvelle Liste de Films</h1>
+  <div class="card">
+    <div class="card-body">
+      <%= form_with(model: @list, url: lists_path) do |form| %>
+        <%= form.label :name %>
+        <%= form.text_field :name, class: "form-control" %>
+        <%= form.label :movie_id, "Sélectionner un film" %>
+        <%= form.collection_select :movie_id, @movies, :id, :title, { prompt: "Choisissez un film" }, class: "form-control" %>
+        <%= form.submit 'Créer la liste', class: "btn btn-primary" %>
+      <% end %>
+      <%= link_to "Retour aux films", lists_path, class: "btn btn-secondary mt-3" %>
+    </div>
+  </div>
+</div>
+
+
+
+

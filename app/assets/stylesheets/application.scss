@@ -1,0 +1,42 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.container {
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(231, 230, 230);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  margin: 4px;
+  margin-top: 8px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #670BFF;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #4D04C4;
+  color: white;
+}
